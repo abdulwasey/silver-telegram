@@ -8,13 +8,13 @@ class Navbar extends Component {
             <nav className="navbar navbar-expand">
                 <div className="container-fluid">
                     <Link to="/" className="navbar-brand">
-                        <img src="" alt="silver-telegram" />
+                        <img src="" alt="Silver Telegram" />
                     </Link>
+                    <ul className="nav navbar-nav navbar-right">
+                        <li><Link to="/signup">Sign Up</Link></li>
+                        <li><Link to="/signin">Log In</Link></li>
+                    </ul>
                 </div>
-                <ul className="nav navbar-nav navbar-right">
-                    <li><Link to="/signup">Sign Up</Link></li>
-                    <li><Link to="/signin">Log In</Link></li>
-                </ul>
             </nav>
         )
     }
@@ -26,4 +26,4 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect(mapStateToProps,null)(Navbar)
+export default connect(mapStateToProps, null)(Navbar)
